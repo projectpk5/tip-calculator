@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0px; margin: 0px; box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    flex-direction: column;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: white;
+    height: 250px;
+    gap:20px;
+    width: 500px;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.peopleOption, .billOption {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.tip {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+p, label {
+    font-size: 12px;
+    color: hsl(186, 14%, 43%);
+}
+
+.amount {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tipAmount > p, .tipTotal > p {
+    color: hsl(189, 47%, 97%);
+}
+
+.perPerson {
+    grid-row: 2;
+    grid-column: 1;
+    color: hsl(186, 14%, 43%);
+}
+
+.calculatorAmount{
+    grid-row: 1 / 3;
+    grid-column: 2;
+}
+
+.total {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.calculatorAmount > input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(172, 67%, 45%);
+    font-size: 21px;
+}
+
+.textButton {
+    width: 70px;
+    height: 20px;
+}
+
+#buttonFormat1, #buttonFormat2 {
+    height: 100%;
+    width: 100%;
+}
+
+#resetButton {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+}
+
+.buttonFormat {
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    gap:2px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+}
+
+.buttonFormat1 {
+    gap:2px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#buttonFormat2 {
+    display: none;
+}
+
+.buttonFormat:hover {
+    color:black;
+    background-color:hsl(172, 67%, 45%) ;
+}
+
+input {
+    font-weight: 700;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 250px;
+    }
+    .calculator {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: hsl(183, 100%, 15%);
+        border-radius: 20px;
+        padding: 10px;
+    }
+}

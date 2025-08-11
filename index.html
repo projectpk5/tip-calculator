@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
+    <div class="app">
+      <div class="options">
+        <div class="billOption">
+          <label for="bill">Bill</label>
+          <input type="text" id = "bill">
+        </div>
+        <div class="tipOption">
+          <label for="tip">Select Tip %</label>
+          <div class="tip">
+            <button class="buttonFormat">5%</button>
+            <button class="buttonFormat">10%</button>
+            <button class="buttonFormat">15%</button>
+            <button class="buttonFormat">20%</button>
+            <button class="buttonFormat">25%</button>
+            <div class="textButton">
+              <button class="buttonFormat1" id="buttonFormat1">Custom</button>
+              <input type="text" id ="buttonFormat2">
+            </div>
+          </div>
+        </div>
+        <div class="peopleOption">
+          <label for="people">Number of People</label>
+          <input type="text" id="people" value="1">
+        </div>
+      </div>
+      <div class="calculator">
+        <div class="amount">
+          <div class="tipAmount">
+            <p>Tip Amount</p>
+          </div>
+          <div class="perPerson">
+            <p>/person</p>
+          </div>
+          <div class="calculatorAmount">
+            <input type="text" value="$" id = "perPersonAmount">
+          </div>
+        </div>
+        <div class="total">
+          <div class="tipTotal">
+            <p>Total</p>
+          </div>
+          <div class="perPerson">
+            <p>/person</p>
+          </div>
+          <div class="calculatorAmount">
+            <input type="text" value="$" id = "totalTipAmount">
+          </div>
+        </div>
+        <div class="resetButtonClass">
+          <br><br>
+          <input type="Reset" value="RESET" id="resetButton" />
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pavan</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
